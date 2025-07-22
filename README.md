@@ -1,4 +1,4 @@
-📝 TaskFlow
+#📝 TaskFlow
 TaskFlow is a full-stack task management application built with ASP.NET Core (.NET 9) and AngularJS, designed to showcase clean architecture, authentication, and role-based access control.
 
 It supports:
@@ -7,7 +7,7 @@ It supports:
 ✅ Role-based access (Admin, Manager, User, Guest)
 ✅ Dockerized deployment
 
-🚀 Features
+##🚀 Features
 🗂 Project & Task Management API
 
 🔒 JWT Authentication with email verification
@@ -18,22 +18,22 @@ It supports:
 
 🐳 Dockerized for easy local development
 
-🛠 Tech Stack
+##🛠 Tech Stack
 Backend: ASP.NET Core (.NET 9), Entity Framework Core, SQLite (PostgreSQL-ready), CQRS, MediatR
 
 Frontend: AngularJS 1.x, Bootstrap, JWT token management
 
 DevOps: Docker, Docker Compose
 
-📦 Getting Started
-⚙️ Prerequisites
+##📦 Getting Started
+###⚙️ Prerequisites
 .NET 9 SDK
 
 Node.js (v14+)
 
 Docker
 
-🖥 Run Locally
+###🖥 Run Locally
 Clone the repository:
 
 bash
@@ -51,13 +51,7 @@ Backend: http://localhost:5000
 
 Frontend: http://localhost:4200
 
-Seeded Admin User
-
-Email: nikkiyesalusky@gmail.com
-
-Password: Admin@1234
-
-🔑 Authentication & Roles
+##🔑 Authentication & Roles
 New users must verify their email before logging in (see console for link).
 
 Predefined roles:
@@ -68,7 +62,7 @@ User – Limited access (can manage own tasks)
 
 Guest – Read-only
 
-🌐 API Endpoints
+##🌐 API Endpoints
 Method	Endpoint	Description	Auth Required
 POST	/api/auth/register	Register a new user	❌
 POST	/api/auth/login	Login & get JWT token	❌
@@ -76,7 +70,7 @@ GET	/api/public/projects	Get public projects	❌
 GET	/api/projects	Get projects for logged-in user	✅
 POST	/api/projects	Create new project	✅
 
-🐳 Docker Setup
+##🐳 Docker Setup
 Build & Run
 
 bash
@@ -89,8 +83,8 @@ API: http://localhost:5000/swagger
 
 Frontend: http://localhost:4200
 
-👥 Contributing
+##👥 Contributing
 Want to extend TaskFlow? Fork this repository and submit a pull request.
 
-📜 License
+##📜 License
 This project is licensed under the MIT License.
